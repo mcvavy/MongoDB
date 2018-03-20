@@ -1,0 +1,27 @@
+{
+  "name": "mongodbstarter",
+  "version": "1.0.0",
+  "description": "getting started with MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcvavy/MongoDB.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "Node"
+  ],
+  "author": "Michael Oyibo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcvavy/MongoDB/issues"
+  },
+  "homepage": "https://github.com/mcvavy/MongoDB#readme",
+  "dependencies": {
+    "mongoose": "^5.0.11"
+  }
+}
