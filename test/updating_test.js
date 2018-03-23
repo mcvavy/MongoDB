@@ -8,7 +8,8 @@ describe('Updating records', () => {
     let char;
     beforeEach((done) => {
         char = new MarioChar({
-            name: 'Mario'
+            name: 'Mario',
+            weight: 50
         });
 
         char.save().then(() => {
@@ -24,6 +25,18 @@ describe('Updating records', () => {
                 assert(result.name === "Luigi");
                 done();
             });
+        });
+    });
+
+
+    it("Increments the weight by 1", (done) => {
+        MarioChar.update({}, {$inc: {weight: 1}})
+        .then(() => {
+            MarioChar.findOne({name: "Mario"})
+            .then((res) => {
+                assert(res.weight === 51);
+                done();
+            })
         });
     });
 
