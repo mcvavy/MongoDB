@@ -12,7 +12,6 @@ describe('Finding records', () => {
         });
 
         char.save().then(() => {
-            assert(char.isNew === false);
             done(); //Signal the completion of the test
         });
     });
