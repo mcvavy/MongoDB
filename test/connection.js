@@ -19,7 +19,6 @@ before((done) => {
 
 //Hook empty the database before every single test
 //Drop the characters collection before each test
-
 beforeEach((done) => {
     //Drop the collection
     mongoose.connection.collections.mariochars.drop(() => done());
